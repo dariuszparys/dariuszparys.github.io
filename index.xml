@@ -13,8 +13,8 @@
       <pubDate>Tue, 10 Nov 2020 08:25:12 +0100</pubDate>
       
       <guid>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</guid>
-      <description>A simple test post should include table of contents
-Subheading 1 First subheading
+      <description>Subheading 1 First subheading
+A simple test post should include table of contents. It seems that the subheading has to be the first element in order to generate the toc automatically.
 Subheading 2 Second subheading
 More Depth Will this be displayed in the TOC?
 Subheading 3 Final subheading.</description>
