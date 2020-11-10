@@ -6,25 +6,26 @@
     <description>Recent content in Shortcodes on snotes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 06:13:36 +0530</lastBuildDate><atom:link href="https://dariuszparys.github.io/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Nov 2020 08:25:12 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</link>
+      <pubDate>Tue, 10 Nov 2020 08:25:12 +0100</pubDate>
+      
+      <guid>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</guid>
+      <description>Hello, world. A simple test post should include table of contents
+Subheading 1 First subheading
+Subheading 2 Second subheading
+More Depth Will this be displayed in the TOC?
+Subheading 3 Final subheading.</description>
+    </item>
+    
     <item>
       <title>Short Codes</title>
       <link>https://dariuszparys.github.io/posts/post-7/</link>
       <pubDate>Tue, 10 Nov 2020 06:13:36 +0530</pubDate>
       
       <guid>https://dariuszparys.github.io/posts/post-7/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Images   Dave Herring     Dave Herring    Instagram Simple Shortcode &amp;lt; instagram_simple BGvuInzyFAe hidecaption &amp;gt;
- YouTube Privacy Enhanced Shortcode &amp;lt; youtube ZJthWmvUzzc &amp;gt;
- Twitter Simple Shortcode &amp;lt; twitter_simple 1085870671291310081 &amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>Short Codes</title>
-      <link>https://dariuszparys.github.io/posts/post-6/</link>
-      <pubDate>Fri, 06 Sep 2019 12:13:36 +0530</pubDate>
-      
-      <guid>https://dariuszparys.github.io/posts/post-6/</guid>
       <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
 Images   Dave Herring     Dave Herring    Instagram Simple Shortcode &amp;lt; instagram_simple BGvuInzyFAe hidecaption &amp;gt;
  YouTube Privacy Enhanced Shortcode &amp;lt; youtube ZJthWmvUzzc &amp;gt;
