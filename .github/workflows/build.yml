@@ -1,0 +1,54 @@
+name: build
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build Hugo Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo
+        env:
+          HUGO_VERSION: 0.78.1
+        run: |
+          mkdir ~/hugo
+          cd ~/hugo
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" --output hugo.tar.gz
+          tar -xvzf hugo.tar.gz
+          sudo mv hugo /usr/local/bin
+
+      - name: Checkout master branch
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          path: main
+          submodules: true
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Hugo Build
+        run: cd main && hugo
+
+      - name: Copy files
+        run: cp -rf main/public/* gh-pages/
+
+      - name: Commit changes
+        run: |
+          cd gh-pages
+
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add -A .
+
+          if git diff-index --quiet HEAD --; then
+            echo "No changes..."
+          else
+            git commit -m "[CI] build hugo static site"
+            git push
+          fi

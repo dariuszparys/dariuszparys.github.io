@@ -1,0 +1,60 @@
+baseURL = "https://dariuszparys.github.io/"
+languageCode = "en-us"
+title = "snotes"
+theme = "simpleness"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableEmoji = true
+author = "Dariusz Parys"
+googleAnalytics = ""
+
+[params]
+  lazyImage = true
+  enableMathJax = false # enable it in Front Matter
+  enableReadingTime = true
+  favicon = "favicon.ico"
+  startyear = "2019"
+  description = "Dariusz's simple notes"
+  disqus = ""
+
+[params.valine]
+  enable = false
+  lang = 'en'
+  appId = ''
+  appKey = ''
+  placeholder = 'Say Something......'
+  requiredFields = ['nick', 'mail']
+  avatar = 'robohash'
+  visitor = true
+  enableHeaderVisitor = true
+  debug = true
+
+[menu]
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[social]
+  github = "https://github.com/dariuszparys"
+  rss = "index.xml"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github" # github, dracula, vim, monokai
+    tabWidth = 4
