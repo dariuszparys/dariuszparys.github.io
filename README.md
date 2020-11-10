@@ -2,4 +2,4 @@
 
 Build status
 
-![build](https://github.com/dariuszparys/dariuszparys.github.io/workflows/build/badge.svg?branch=main)
+![build](https://github.com/dariuszparys/dariuszparys.github.io/workflows/build/badge.svg)
