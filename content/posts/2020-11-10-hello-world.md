@@ -8,11 +8,12 @@ tags: [image]
 
 ---
 
-A simple test post should include table of contents
-
 ## Subheading 1
 
 First subheading
+
+A simple test post should include table of contents. It seems that the subheading has to
+be the first element in order to generate the toc automatically.
 
 ## Subheading 2
 
