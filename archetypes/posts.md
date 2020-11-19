@@ -1,6 +1,6 @@
 ---
-title: About
-date: 2020-11-19T23:45:34+01:00
+title: {{ replaceRE "[0-9]{2,}" "" .Name | replaceRE "^-*" "" | replaceRE "-" " " | title }}
+date: {{ .Date }}
 lastmod: 
 author: Dariusz Parys
 
@@ -8,11 +8,9 @@ description:
 categories: []
 tags: []
 
-draft: false
+draft: true
 enableDisqus : false
 enableMathJax: false
 disableToC: false
 disableAutoCollapse: true
 ---
-
-I'm Dariusz. A dev working @microsoft. You can find me on [Github](https://github.com/dariuszparys)
