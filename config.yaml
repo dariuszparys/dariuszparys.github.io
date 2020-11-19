@@ -2,7 +2,7 @@ baseURL: https://dariuszparys.github.io
 languageCode: en-us
 defaultContentLanguage: en
 title: s'notes
-theme: cupper-hugo-theme
+theme: simpleness
 googleAnalytics: 
 disqusShortname: 
 enableGitInfo: true
