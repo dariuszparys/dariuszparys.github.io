@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on snotes</title>
+    <title>Categories on code notes</title>
     <link>https://dariuszparys.github.io/categories/</link>
-    <description>Recent content in Categories on snotes</description>
+    <description>Recent content in Categories on code notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 08:25:12 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shortcodes</title>
-      <link>https://dariuszparys.github.io/categories/shortcodes/</link>
-      <pubDate>Tue, 10 Nov 2020 08:25:12 +0100</pubDate>
-      
-      <guid>https://dariuszparys.github.io/categories/shortcodes/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language>
+    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright><atom:link href="https://dariuszparys.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

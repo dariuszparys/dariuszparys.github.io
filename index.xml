@@ -1,45 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>s&#39;notes</title>
+    <title>code notes</title>
     <link>https://dariuszparys.github.io/</link>
-    <description>Recent content on s&#39;notes</description>
+    <description>Recent content on code notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 08:25:12 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello World</title>
-      <link>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</link>
-      <pubDate>Tue, 10 Nov 2020 08:25:12 +0100</pubDate>
-      
-      <guid>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</guid>
-      <description>Subheading 1 First subheading
-A simple test post should include table of contents. It seems that the subheading has to be the first element in order to generate the toc automatically.
-Subheading 2 Second subheading
-More Depth Will this be displayed in the TOC?
-Subheading 3 Final subheading.</description>
-    </item>
-    
-    <item>
-      <title>Short Codes</title>
-      <link>https://dariuszparys.github.io/posts/post-7/</link>
-      <pubDate>Tue, 10 Nov 2020 06:13:36 +0530</pubDate>
-      
-      <guid>https://dariuszparys.github.io/posts/post-7/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Images   Dave Herring     Dave Herring    Instagram Simple Shortcode &amp;lt; instagram_simple BGvuInzyFAe hidecaption &amp;gt;
- YouTube Privacy Enhanced Shortcode &amp;lt; youtube ZJthWmvUzzc &amp;gt;
- Twitter Simple Shortcode &amp;lt; twitter_simple 1085870671291310081 &amp;gt;</description>
-    </item>
-    
+    <language>en</language>
+    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://dariuszparys.github.io/about/</link>
-      <pubDate>Tue, 22 Sep 2020 10:37:58 +0530</pubDate>
+      <pubDate>Thu, 19 Nov 2020 23:45:34 +0100</pubDate>
       
       <guid>https://dariuszparys.github.io/about/</guid>
-      <description>About Yourself This is some static page where you can write about yourself.
-hugo theme simpleness A hugo theme ported form contrast-hugo</description>
+      <description>I&amp;rsquo;m Dariusz. A dev working @microsoft. You can find me on Github</description>
     </item>
     
   </channel>
