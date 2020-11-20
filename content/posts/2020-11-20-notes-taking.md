@@ -21,6 +21,8 @@ Just some notes
 
 Just need to select my color scheme
 
+<!--more-->
+
 ```python
 from testinfra.backend import base
 from testinfra.modules.file import File

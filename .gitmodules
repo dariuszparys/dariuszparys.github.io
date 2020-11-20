@@ -4,3 +4,6 @@
 [submodule "themes/simpleness"]
 	path = themes/simpleness
 	url = https://github.com/RainerChiang/simpleness.git
+[submodule "themes/zozo"]
+	path = themes/zozo
+	url = https://github.com/varkai/hugo-theme-zozo

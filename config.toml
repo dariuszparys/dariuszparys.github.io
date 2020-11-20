@@ -1,66 +1,74 @@
 baseURL = "https://dariuszparys.github.io"
 languageCode = "en"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
+defaultContentLanguage = "en"
+title = "brain dump"                         # site title  # 网站标题
+theme = "zozo"
+hasCJKLanguage = false                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
+summaryLength = 100
+paginate = 4                           # shows the number of articles  # 首页显示文章数量
 enableEmoji = true
-# pagination = 10
+googleAnalytics = ""                   # your google analytics id
+disqusShortname = ""                   # your discuss shortname
 
-title = "code notes"
-author = "Dariusz Parys"
-copyright = "[Home](/) &#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+pygmentscodefencesguesssyntax = true
 
-theme = "simpleness"
-googleAnalytics = ""
+[author]                               # essential                     # 必需
+  name = "Dariusz Parys"
+
+[blackfriday]
+  smartypants = false
+
+[[menu.main]]                          # config your menu  # 配置菜单
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archive"
+  url = "/posts/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "About"
+  weight = 40
+  identifier = "about"
+  url = "/about/"
 
 [params]
-  lazyImage = true
-  enableMathJax = false # enable it in Front Matter
-  enableReadingTime = true
-  favicon = "favicon.ico"
-  startyear = "2020"
-  description = "various code notes"
-  disqus = ""
-
+  subTitle = "code, ideas, whatever"                                       
+  footerSlogan = "Dumping my thoughts here"                                
+  keywords = ["Hugo","theme","zozo"]                                  
+  description = "A blog written by Dariusz parys"                     
+  enableMathJax = true                                                
+  enableSummary = true                                                
+  mainSections = ["posts","post"]
+  
+# Valine.
+# You can get your appid and appkey from https://leancloud.cn
+# more info please open https://valine.js.org
 [params.valine]
   enable = false
-  lang = 'en'
-  appId = ''
-  appKey = ''
-  placeholder = 'Say Something......'
-  requiredFields = ['nick', 'mail']
-  avatar = 'robohash'
+  appId = ""
+  appKey = ""
+  placeholder = " "
   visitor = true
-  enableHeaderVisitor = true
-  debug = true
 
-[menu]
-  [[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-  [[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 2
-
+# Your socail's url
 [social]
   github = "https://github.com/dariuszparys"
-  rss = "index.xml"
+  twitter = " "
+  facebook = " "
+  weibo = " "
+  instagram = " "
 
-[taxonomies]
-category = "categories"
-tag = "tags"
-
-# doc: https://gohugo.io/getting-started/configuration-markup#highlight
-# syntax style: https://xyproto.github.io/splash/docs/longer/all.html
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    style = "manni" # github, dracula, vim, monokai
-    tabWidth = 4
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true

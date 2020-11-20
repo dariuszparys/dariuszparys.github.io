@@ -1,16 +1,12 @@
 ---
-title: {{ replaceRE "[0-9]{2,}" "" .Name | replaceRE "^-*" "" | replaceRE "-" " " | title }}
+title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-lastmod: 
-author: Dariusz Parys
-
-description: 
-categories: []
-tags: []
-
+hidden: false
 draft: true
-enableDisqus : false
-enableMathJax: false
-disableToC: false
-disableAutoCollapse: true
+tags: []
+keywords: []
+description: ""
+slug: ""
+author: Dariusz Parys
 ---
+
