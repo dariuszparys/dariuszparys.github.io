@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on s&#39;notes</title>
+    <title>Posts on brain dump</title>
     <link>https://dariuszparys.github.io/posts/</link>
-    <description>Recent content in Posts on s&#39;notes</description>
+    <description>Recent content in Posts on brain dump</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2020 08:25:12 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Nov 2020 08:28:55 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World</title>
-      <link>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</link>
-      <pubDate>Tue, 10 Nov 2020 08:25:12 +0100</pubDate>
+      <title>Test</title>
+      <link>https://dariuszparys.github.io/posts/2020-11-23-test/</link>
+      <pubDate>Mon, 23 Nov 2020 08:28:55 +0100</pubDate>
       
-      <guid>https://dariuszparys.github.io/posts/2020-11-10-hello-world/</guid>
-      <description>Subheading 1 First subheading
-A simple test post should include table of contents. It seems that the subheading has to be the first element in order to generate the toc automatically.
-Subheading 2 Second subheading
-More Depth Will this be displayed in the TOC?
-Subheading 3 Final subheading.</description>
-    </item>
-    
-    <item>
-      <title>Short Codes</title>
-      <link>https://dariuszparys.github.io/posts/post-7/</link>
-      <pubDate>Tue, 10 Nov 2020 06:13:36 +0530</pubDate>
-      
-      <guid>https://dariuszparys.github.io/posts/post-7/</guid>
-      <description>Hugo ships with several Built-in Shortcodes for rich content, along with a Privacy Config and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-Images   Dave Herring     Dave Herring    Instagram Simple Shortcode &amp;lt; instagram_simple BGvuInzyFAe hidecaption &amp;gt;
- YouTube Privacy Enhanced Shortcode &amp;lt; youtube ZJthWmvUzzc &amp;gt;
- Twitter Simple Shortcode &amp;lt; twitter_simple 1085870671291310081 &amp;gt;</description>
+      <guid>https://dariuszparys.github.io/posts/2020-11-23-test/</guid>
+      <description>Hello world. that&amp;rsquo;s it.</description>
     </item>
     
   </channel>

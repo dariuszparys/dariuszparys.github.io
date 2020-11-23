@@ -5,7 +5,17 @@
     <link>https://dariuszparys.github.io/</link>
     <description>Recent content on brain dump</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Nov 2020 08:28:55 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test</title>
+      <link>https://dariuszparys.github.io/posts/2020-11-23-test/</link>
+      <pubDate>Mon, 23 Nov 2020 08:28:55 +0100</pubDate>
+      
+      <guid>https://dariuszparys.github.io/posts/2020-11-23-test/</guid>
+      <description>Hello world. that&amp;rsquo;s it.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://dariuszparys.github.io/about/</link>

@@ -3,12 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dariuszparys.github.io/about/</loc>
-    <lastmod>2020-11-19T23:45:34+01:00</lastmod>
+    <loc>https://dariuszparys.github.io/</loc>
+    <lastmod>2020-11-23T08:28:55+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dariuszparys.github.io/</loc>
+    <loc>https://dariuszparys.github.io/posts/</loc>
+    <lastmod>2020-11-23T08:28:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dariuszparys.github.io/posts/2020-11-23-test/</loc>
+    <lastmod>2020-11-23T08:28:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dariuszparys.github.io/about/</loc>
+    <lastmod>2020-11-19T23:45:34+01:00</lastmod>
   </url>
   
   <url>
