@@ -1,12 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-hidden: false
-draft: true
-tags: []
-keywords: []
 description: ""
-slug: ""
-author: Dariusz Parys
+tags: []
+featured_image: ""
+images: []
+categories: 
+comment : true
+draft: true
 ---
-

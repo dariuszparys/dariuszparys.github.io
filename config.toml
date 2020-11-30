@@ -1,74 +1,60 @@
-baseURL = "https://dariuszparys.github.io"
-languageCode = "en"
-defaultContentLanguage = "en"
-title = "brain dump"                         # site title  # 网站标题
-theme = "zozo"
-hasCJKLanguage = false                  # has chinese/japanese/korean ?  # 自动检测是否包含 中文\日文\韩文
-summaryLength = 100
-paginate = 4                           # shows the number of articles  # 首页显示文章数量
-enableEmoji = true
-googleAnalytics = ""                   # your google analytics id
-disqusShortname = ""                   # your discuss shortname
-
-pygmentsUseClasses = true
-pygmentCodeFences = true
-pygmentscodefencesguesssyntax = true
-
-[author]                               # essential                     # 必需
-  name = "Dariusz Parys"
-
-[blackfriday]
-  smartypants = false
-
-[[menu.main]]                          # config your menu  # 配置菜单
-  name = "Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "Archive"
-  weight = 20
-  identifier = "archive"
-  url = "/posts/"
-[[menu.main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "About"
-  weight = 40
-  identifier = "about"
-  url = "/about/"
-
-[params]
-  subTitle = "code, ideas, whatever"                                       
-  footerSlogan = "Dumping my thoughts here"                                
-  keywords = ["Hugo","theme","zozo"]                                  
-  description = "A blog written by Dariusz parys"                     
-  enableMathJax = true                                                
-  enableSummary = true                                                
-  mainSections = ["posts","post"]
-  
-# Valine.
-# You can get your appid and appkey from https://leancloud.cn
-# more info please open https://valine.js.org
-[params.valine]
-  enable = false
-  appId = ""
-  appKey = ""
-  placeholder = " "
-  visitor = true
-
-# Your socail's url
-[social]
-  github = "https://github.com/dariuszparys"
-  twitter = " "
-  facebook = " "
-  weibo = " "
-  instagram = " "
+baseURL = "https://dariuszparys.github.io/"
+DefaultContentLanguage = "en"
+languageCode = "en-us"
+title = "Pile of Posts"
+copyright = "2020 (c)"
+theme = "diary"
+# googleAnalytics = ""
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-  unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "perldoc"
+    tabWidth = 4
+
+[params]
+subtitle = "various topics"
+enableGitalk = false
+disableAutoCollapse = true
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
+title = "Pile of Posts" # will set 'og:site_name'
+description = "various topics"  # will set 'og:description'
+
+[params.gitalk]
+  owner = "user"
+  repo = "repo name"
+  client_id = "your client id"
+  client_secret = "your client secret"
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+
+[[menu.main]]
+url = "/categories"
+name = "Categories"
+weight = 2
+
+[[menu.main]]
+url = "/tags"
+name = "Tags"
+weight = 3
+
+[[menu.main]]
+url = "/posts"
+name = "Archive"
+weight = 1
+
+[[menu.main]]
+url = "/index.xml"
+name = "RSS Feed"
+weight = 4

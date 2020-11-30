@@ -1,9 +1,0 @@
-[submodule "themes/cupper-hugo-theme"]
-	path = themes/cupper-hugo-theme
-	url = https://github.com/zwbetz-gh/cupper-hugo-theme.git
-[submodule "themes/simpleness"]
-	path = themes/simpleness
-	url = https://github.com/RainerChiang/simpleness.git
-[submodule "themes/zozo"]
-	path = themes/zozo
-	url = https://github.com/varkai/hugo-theme-zozo
