@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <generator uri="https://gohugo.io/" version="0.78.1">Hugo</generator><title type="html"><![CDATA[Twenty Twenty Twenty]]></title>
+    
+        <subtitle type="html"><![CDATA[My personal pile of notes]]></subtitle>
+    
+    
+    
+            <link href="https://dariuszparys.github.io/" rel="alternate" type="text/html" title="HTML" />
+            <link href="https://dariuszparys.github.io/feed.xml" rel="self" type="application/atom+xml" title="Atom" />
+            <link href="https://dariuszparys.github.io/feed.json" rel="alternate" type="application/json" title="Json" />
+    <updated>2020-11-30T21:39:18+00:00</updated>
+    
+        <author>
+            <name>Dariusz Parys</name>
+            
+                <email>dparys@microsoft.com</email>
+            </author>
+        
+    <id>https://dariuszparys.github.io/</id>
+</feed>
