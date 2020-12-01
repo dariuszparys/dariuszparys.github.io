@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twenty Twenty Twenty</title>
-    <link>http://dariuszparys.github.io/</link>
+    <link>https://dariuszparys.github.io/</link>
     <description>Recent content on Twenty Twenty Twenty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright><atom:link href="http://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://dariuszparys.github.io/about/</link>
+      <link>https://dariuszparys.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://dariuszparys.github.io/about/</guid>
+      <guid>https://dariuszparys.github.io/about/</guid>
       <description>Hi, I&amp;rsquo;m Dariusz. A dev working @microsoft. You can find me on Github</description>
     </item>
     
