@@ -1,0 +1,52 @@
+baseURL = "http://dariuszparys.github.io/"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+enableEmoji = true
+# pagination = 10
+
+title = "Twenty Twenty Twenty"
+author = "Dariusz Parys"
+copyright = "[Home](/) &#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)"
+
+theme = "simpleness"
+googleAnalytics = ""
+
+[params]
+  lazyImage = true
+  enableMathJax = false # enable it in Front Matter
+  enableReadingTime = true
+  favicon = "favicon.ico"
+  startyear = "2020"
+  description = "My personal pile of notes"
+  disqus = ""
+
+[menu]
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[social]
+  github = "https://github.com/dariuszparys"
+  rss = "index.xml"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai" # github, dracula, vim, monokai
+    tabWidth = 4
