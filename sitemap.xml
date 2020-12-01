@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dariuszparys.github.io/posts/</loc>
+    <lastmod>2020-12-01T00:00:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dariuszparys.github.io/</loc>
+    <lastmod>2020-12-01T00:00:01+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dariuszparys.github.io/posts/twenty-twenty-twenty/</loc>
+    <lastmod>2020-12-01T00:00:01+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dariuszparys.github.io/about/</loc>
   </url>
   
@@ -12,10 +27,6 @@
   
   <url>
     <loc>https://dariuszparys.github.io/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dariuszparys.github.io/</loc>
   </url>
   
 </urlset>

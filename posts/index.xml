@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on brain dump</title>
+    <title>Posts on Twenty Twenty Twenty</title>
     <link>https://dariuszparys.github.io/posts/</link>
-    <description>Recent content in Posts on brain dump</description>
+    <description>Recent content in Posts on Twenty Twenty Twenty</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2020 08:28:55 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:01 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://dariuszparys.github.io/posts/2020-11-23-test/</link>
-      <pubDate>Mon, 23 Nov 2020 08:28:55 +0100</pubDate>
+      <title>Twenty Twenty Twenty</title>
+      <link>https://dariuszparys.github.io/posts/twenty-twenty-twenty/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:01 +0100</pubDate>
       
-      <guid>https://dariuszparys.github.io/posts/2020-11-23-test/</guid>
-      <description>Hello world. that&amp;rsquo;s it.</description>
+      <guid>https://dariuszparys.github.io/posts/twenty-twenty-twenty/</guid>
+      <description>The number twenty is a special one for me today. Exactly on December 1st, 2000 I joined Microsoft. So it is time for me to get sentimental and hook up some old habits I did in the past. I had once a blog, started on http://blogs.gotdotnet.com, became very active during the beginnings and ended in nirvana a couple of years ago. I migrated the archive to Medium (no cross link, why should I) just to realize how much it sucks.</description>
     </item>
     
   </channel>
