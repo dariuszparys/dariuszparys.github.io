@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on brain dump</title>
-    <link>https://dariuszparys.github.io/tags/</link>
-    <description>Recent content in Tags on brain dump</description>
+    <title>Tags on Twenty Twenty Twenty</title>
+    <link>http://dariuszparys.github.io/tags/</link>
+    <description>Recent content in Tags on Twenty Twenty Twenty</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://dariuszparys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright><atom:link href="http://dariuszparys.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
