@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.78.1" />
+
+  <title> Powershell EncodedCommand From Bash or Python |  Twenty Twenty Twenty</title>
+  <meta name="description" content="My personal pile of notes">
+  <link rel="stylesheet" href="https://dariuszparys.github.io/css/simpleness.css">
+  <link rel="canonical" href="https://dariuszparys.github.io/posts/powershell-encodedcommand-from-bash-and-python/">
+  <link rel="alternate" type="application/rss+xml" href="" title="Twenty Twenty Twenty">
+  
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="menus">
+  
+
+  <nav >
+    
+    <a href="/"> Home</a>
+    
+    <a href="/about/"> About</a>
+    
+  </nav>
+
+  <nav class="fontawesome">
+    
+    <a href="https://github.com/dariuszparys" target="_blank">
+        <i title="GitHub" class="fab fa-github"></i>
+    </a>
+    
+    
+    <a href="https://dariuszparys.github.io/index.xml" target="_blank">
+        <i title="RSS" class="fas fa-rss"></i>
+    </a>
+    
+  </nav>
+  
+  
+  <div class="hidden description">My personal pile of notes</div>
+  
+</header>
+
+<article class="article">
+  <header>
+    <h1 style="text-align: center;" >Powershell EncodedCommand From Bash or Python</h1>
+
+    <div class="post-meta">
+    
+      <time datetime="2020-12-15T06:57:39&#43;01:00">December 15, 2020</time> &nbsp; 
+    
+
+     &nbsp;
+
+    
+    
+    
+
+    
+      <i class="far fa-clock"></i>
+      
+      
+      
+
+      
+        1 min
+      
+      24 s
+      &nbsp;
+    
+
+    
+    </div>
+  </header>
+
+   
+
+  <div class="text">
+    <p>Powershell supports a feature to invoke commands encoded as base64 strings. This feature is handy if your command is assembled through another script in order to be executed and contains a lot of parameters where quoting and special character encoding can become tricky.</p>
+<h2 id="encoding-commands">Encoding commands</h2>
+<p>In order to use the EncodedCommand flag like stated in the <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_pwsh?view=powershell-7.1#-encodedcommand---e---ec">official documentation</a> you need to encode the string at <em>UTF-16</em>.</p>
+<h2 id="utf-16-little-endian">UTF 16 Little-endian</h2>
+<p>Windows is using per default little-endian order so if the documentation posts it is expecting <em>UTF-16</em> it actually expects <em>UTF-16-LE</em>.</p>
+<p>Assume we have the following command we want to execute in powershell</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">docker build -t test<span style="color:#960050;background-color:#1e0010">:</span>latest --build-arg TOKEN=<span style="color:#e6db74">&#39;Test$$1234&#39;</span>
+</code></pre></div><p>Following the sample of the documentation the conversion would look like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">$command = <span style="color:#e6db74">&#39;docker build -t test:latest --build-arg TOKEN=&#39;&#39;Test$$1234&#39;&#39; .&#39;</span>
+$bytes = <span style="color:#66d9ef">[System.Text.Encoding]</span>::Unicode.GetBytes($command)
+$encodedCommand = <span style="color:#66d9ef">[Convert]</span>::ToBase64String($bytes)
+Write-Host $encodedCommand
+</code></pre></div><p>The result is a <em>UTF-16</em> encoded string.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ZABvAGMAawBlAHIAIABiAHUAaQBsAGQAIAAtAHQAIAB0AGUAcwB0ADoAbABhAHQAZQBzAHQAIAAtAC0AYgB1AGkAbABkAC0AYQByAGcAIABUAE8ASwBFAE4APQAnAFQAZQBzAHQAJAAkADEAMgAzADQAJwAgAC4A
+</code></pre></div><p>It is <em>UTF-16</em> but more concrete it is <em>UTF-16-LE</em> but it isn&rsquo;t stated anywhere</p>
+<p>If you try now to encode the string with the same encoding with Python you&rsquo;ll end up with something like this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> base64
+
+to_encode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;docker build -t test:latest --build-arg TOKEN=&#39;&#39;Test$$1234&#39;&#39; .&#39;</span>
+encoded_bytes <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64encode(to_encode<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-16&#39;</span>))
+encoded_string <span style="color:#f92672">=</span> str(encoded_bytes, <span style="color:#e6db74">&#39;utf-8&#39;</span>)
+<span style="color:#66d9ef">print</span>(encoded_string)
+</code></pre></div><p>and a result that differs from the powershell script above</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">//5kAG8AYwBrAGUAcgAgAGIAdQBpAGwAZAAgAC0AdAAgAHQAZQBzAHQAOgBsAGEAdABlAHMAdAAgAC0ALQBiAHUAaQBsAGQALQBhAHIAZwAgAFQATwBLAEUATgA9AFQAZQBzAHQAJAAkADEAMgAzADQAIAAuAA==
+</code></pre></div><p>This is a <em>UTF-16</em> string with an included byte order mark which let&rsquo;s the system choose the right interpretation in case it runs on an big endian platform. But that is not what <em>Powershell&rsquo;s EncodedCommand</em> expects. You&rsquo;ll have to use explicitly little-endian encoding to make that work.</p>
+<h2 id="correct-encoding-with-python">Correct Encoding with Python</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> base64
+
+to_encode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;docker build -t test:latest --build-arg TOKEN=&#39;&#39;Test$$1234&#39;&#39; .&#39;</span>
+encoded_bytes <span style="color:#f92672">=</span> base64<span style="color:#f92672">.</span>b64encode(to_encode<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-16-le&#39;</span>))
+encoded_string <span style="color:#f92672">=</span> str(encoded_bytes, <span style="color:#e6db74">&#39;utf-8&#39;</span>)
+<span style="color:#66d9ef">print</span>(encoded_string)
+</code></pre></div><h2 id="correct-encoding-with-bash">Correct Encoding with Bash</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">to_encoded_command<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local command_to_encode<span style="color:#f92672">=</span>$1
+    echo <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>command_to_encode<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> | iconv --to-code UTF-16LE | base64 -w0
+<span style="color:#f92672">}</span>
+
+to_encoded_command <span style="color:#e6db74">&#39;docker build -t test:latest --build-arg TOKEN=&#39;&#39;Test$$1234&#39;&#39; .&#39;</span>
+</code></pre></div><h2 id="sources">Sources</h2>
+<ol>
+<li><a href="https://stackoverflow.com/questions/36550038/in-utf-16-utf-16be-utf-16le-is-the-endian-of-utf-16-the-computers-endianness">https://stackoverflow.com/questions/36550038/in-utf-16-utf-16be-utf-16le-is-the-endian-of-utf-16-the-computers-endianness</a></li>
+<li><a href="https://en.wikipedia.org/w/index.php?title=UTF-16&amp;oldid=714413633#Byte_order_encoding_schemes">https://en.wikipedia.org/w/index.php?title=UTF-16&amp;oldid=714413633#Byte_order_encoding_schemes</a></li>
+</ol>
+
+  </div>
+
+  <footer>
+    <hr class="end-line">
+
+    
+
+    
+
+    
+    
+  </footer>
+
+  <div class="comments">
+
+
+
+</div>
+
+</article>
+
+
+</body>
+<div class="foot">
+  
+  
+    &copy; 2020 - 2020 &#183; 
+    <a href="/">Home</a> · Theme <a href="https://github.com/RainerChiang/simpleness">Simpleness</a> Powered by <a href="https://gohugo.io/">Hugo</a> &#183;
+    <a href="#"><i class="fas fa-chevron-up"></i></a>
+  
+
+  
+</div>
+
+<script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyImage = new LazyLoad({
+    container: document.getElementById('article')
+  });
+</script>
+
+
+</html>

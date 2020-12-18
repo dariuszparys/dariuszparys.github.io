@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>[Home](/) &amp;#183; Theme [Simpleness](https://github.com/RainerChiang/simpleness) Powered by [Hugo](https://gohugo.io/)</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 00:00:01 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Dec 2020 06:57:39 +0100</lastBuildDate><atom:link href="https://dariuszparys.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell EncodedCommand From Bash or Python</title>
+      <link>https://dariuszparys.github.io/posts/powershell-encodedcommand-from-bash-and-python/</link>
+      <pubDate>Tue, 15 Dec 2020 06:57:39 +0100</pubDate>
+      
+      <guid>https://dariuszparys.github.io/posts/powershell-encodedcommand-from-bash-and-python/</guid>
+      <description>Powershell supports a feature to invoke commands encoded as base64 strings. This feature is handy if your command is assembled through another script in order to be executed and contains a lot of parameters where quoting and special character encoding can become tricky.
+Encoding commands In order to use the EncodedCommand flag like stated in the official documentation you need to encode the string at UTF-16.
+UTF 16 Little-endian Windows is using per default little-endian order so if the documentation posts it is expecting UTF-16 it actually expects UTF-16-LE.</description>
+    </item>
+    
     <item>
       <title>Twenty Twenty Twenty</title>
       <link>https://dariuszparys.github.io/posts/twenty-twenty-twenty/</link>
