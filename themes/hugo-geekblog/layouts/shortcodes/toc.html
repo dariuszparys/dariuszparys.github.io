@@ -1,5 +1,0 @@
-{{ $tocLevels := default (default 6 .Site.Params.GeekblogToC) .Page.Params.GeekblogToC }}
-
-{{ if and $tocLevels .Page.TableOfContents }}
-  <div class="gblog-toc gblog-toc__level--{{$tocLevels}}">{{ .Page.TableOfContents }}<hr></div>
-{{ end }}
