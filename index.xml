@@ -15,8 +15,8 @@
       
       <guid>https://dariuszparys.github.io/posts/powershell-encodedcommand-from-bash-and-python/</guid>
       <description>Powershell supports a feature to invoke commands encoded as base64 strings. This feature is handy if your command is assembled through another script in order to be executed and contains a lot of parameters where quoting and special character encoding can become tricky.
-Encoding commands In order to use the EncodedCommand flag like stated in the official documentation you need to encode the string at UTF-16.
-UTF 16 Little-endian Windows is using per default little-endian order so if the documentation posts it is expecting UTF-16 it actually expects UTF-16-LE.</description>
+Encoding commands In order to use the EncodedCommand flag like stated in the official documentation you need to encode the string at UTF-16LE.
+ Update after reporting the issue with the documentation it was quickly fixed.</description>
     </item>
     
     <item>
